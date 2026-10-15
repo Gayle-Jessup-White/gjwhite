@@ -364,9 +364,9 @@ p { margin: 0; }
 }
 
 /* ---------- Gallery ---------- */
-.gallery { display: flex; gap: 24px; }
+.gallery { display: flex; flex-wrap: wrap; gap: 24px; }
 .gallery__item {
-  position: relative; flex: var(--ar) 1 0; min-width: 0; padding: 0;
+  position: relative; flex: var(--ar) 1 calc(var(--ar) * 300px); min-width: 0; padding: 0;
   background: var(--card); border: 1px solid var(--card-line); cursor: zoom-in; overflow: hidden;
 }
 .gallery__item img { width: 100%; height: 100%; object-fit: cover; transition: transform .3s; }

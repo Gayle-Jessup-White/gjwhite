@@ -112,7 +112,7 @@ In `about.html`, each photo is a `<button class="gallery__item">` block:
    - `data-alt` (a description for screen readers)
    - `aria-label`
 
-Three or four photos fit well in one row on desktop. On phones they stack.
+Photos flow into rows automatically on desktop and stack on phones. To italicize words in a title (such as a book name), wrap them in asterisks: `data-title="Speaking about *Reclamation*"`.
 
 ## Hosting
 

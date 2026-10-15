@@ -140,7 +140,13 @@
       var el = items[current];
       img.src = el.getAttribute('data-full');
       img.alt = el.getAttribute('data-alt') || el.getAttribute('data-title') || '';
-      tTitle.textContent = el.getAttribute('data-title') || '';
+      // *Text* between asterisks in data-title is shown in italics.
+      tTitle.textContent = '';
+      (el.getAttribute('data-title') || '').split('*').forEach(function (part, n) {
+        if (!part) return;
+        if (n % 2) { var em = document.createElement('em'); em.textContent = part; tTitle.append(em); }
+        else tTitle.append(document.createTextNode(part));
+      });
       tText.textContent = el.getAttribute('data-caption') || '';
       tText.hidden = !tText.textContent;
       tCredit.textContent = el.getAttribute('data-credit') || '';
