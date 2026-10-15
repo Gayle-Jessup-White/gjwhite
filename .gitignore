@@ -1,0 +1,4 @@
+# Files that stay on this Mac and never go to GitHub
+.DS_Store
+*.zip
+notes.txt
