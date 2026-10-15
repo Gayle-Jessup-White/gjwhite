@@ -38,8 +38,6 @@
       var a = document.createElement('a');
       a.className = 'news-card' + (item.featured ? ' news-card--featured' : '');
       a.href = item.url || '#';
-      a.target = '_blank';
-      a.rel = 'noopener';
 
       var meta = document.createElement('div');
       meta.className = 'news-card__meta';
@@ -66,10 +64,6 @@
         p.textContent = item.summary;
         a.append(p);
       }
-      var sr = document.createElement('span');
-      sr.className = 'visually-hidden';
-      sr.textContent = ' (opens in a new tab)';
-      a.append(sr);
       newsList.append(a);
     });
   }
