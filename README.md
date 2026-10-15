@@ -1,4 +1,4 @@
-# gjwhite.com
+# gaylejessupwhite.org
 
 The website for Gayle Jessup White: plain HTML, CSS and a little JavaScript. There is nothing to install or build. Upload the folder to any static host and it works.
 
@@ -72,7 +72,7 @@ The form needs a service to receive submissions and email them to Gayle. It is s
 Already included:
 
 - A hidden "honeypot" field named `_gotcha`. Formspree drops any submission where a bot fills it in.
-- A `_subject` field, so emails arrive as "New message from gjwhite.com."
+- A `_subject` field, so emails arrive as "New message from gaylejessupwhite.org."
 - The sender's email address in the `email` field, so Gayle can hit Reply.
 - A thank-you message on the page after sending, and an error message that offers the email address if sending fails.
 - Until `YOUR_FORM_ID` is replaced, the form tells visitors to email Gayle directly rather than failing silently.
@@ -118,13 +118,13 @@ Photos flow into rows automatically on desktop and stack on phones. To italicize
 
 The site is static, so any of these work:
 
-- **Cloudflare Pages / Netlify:** create a project and drag in this folder, or connect a GitHub repository holding it. Then add the custom domain `gjwhite.com` and follow their DNS instructions. HTTPS is automatic.
+- **Cloudflare Pages / Netlify:** create a project and drag in this folder, or connect a GitHub repository holding it. Then add the custom domain `gaylejessupwhite.org` and follow their DNS instructions. HTTPS is automatic.
 - **GitHub Pages:** push the folder to a repository and turn on Pages in Settings.
-- **Railway:** deploy the folder as a static site. For example, add a `Dockerfile` with `FROM nginx:alpine` and `COPY . /usr/share/nginx/html`, or use a static-site template. Then add `gjwhite.com` under the service's custom domain settings and update DNS.
+- **Railway:** deploy the folder as a static site. For example, add a `Dockerfile` with `FROM nginx:alpine` and `COPY . /usr/share/nginx/html`, or use a static-site template. Then add `gaylejessupwhite.org` under the service's custom domain settings and update DNS.
 
 After launch:
 
-- Submit `https://gjwhite.com/sitemap.xml` in Google Search Console.
+- Submit `https://gaylejessupwhite.org/sitemap.xml` in Google Search Console.
 - Check how a link preview looks by pasting the URL into a social post draft.
 
 ## Fonts
