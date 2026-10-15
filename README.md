@@ -130,3 +130,7 @@ After launch:
 ## Fonts
 
 The fonts load from Google Fonts: Cormorant Garamond for headings, Source Serif 4 for body text, and Libre Franklin for labels and buttons. No other outside services are used except the form service, and Turnstile if you turn it on.
+
+## Making sure visitors see your changes
+
+Browsers keep copies of `css/styles.css` and the files in `js/` for a while. Each page loads them with a version number, such as `js/main.js?v=2`. After changing one of those files, raise the number (`?v=3`) everywhere it appears in `index.html`, `about.html` and `404.html`, so browsers fetch the new copy right away.
