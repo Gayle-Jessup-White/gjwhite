@@ -205,6 +205,7 @@ p { margin: 0; }
 .book__info { display: flex; flex-direction: column; gap: 22px; }
 .book__info h3 { font-size: clamp(38px, 3.6vw, 52px); }
 .book__subtitle { font-family: var(--serif-display); font-size: clamp(23px, 2vw, 28px); line-height: 1.3; font-style: italic; color: var(--ink-soft); }
+.book__tagline { font-family: var(--sans); font-size: 15px; font-weight: 700; letter-spacing: 0.14em; line-height: 1.7; text-transform: uppercase; color: var(--accent); padding-top: 8px; border-top: 1px solid var(--rule); }
 .buy-links { display: flex; flex-wrap: wrap; gap: 12px; padding-top: 8px; }
 .buy-links .btn { min-height: 48px; padding: 12px 22px; font-size: 16px; }
 .next-book {
@@ -218,8 +219,7 @@ p { margin: 0; }
 @media (max-width: 860px) {
   .book, .next-book { grid-template-columns: 1fr; }
   .book__cover { max-width: 260px; margin: 0 auto; }
-  .buy-links { display: grid; grid-template-columns: 1fr 1fr; }
-  .buy-links .btn--primary, .buy-links .btn:last-child { grid-column: 1 / -1; }
+  .buy-links { display: grid; grid-template-columns: 1fr; }
 }
 
 /* ---------- News ---------- */
